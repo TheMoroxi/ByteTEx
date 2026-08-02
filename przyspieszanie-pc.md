@@ -242,3 +242,4 @@ Stary komputer często można znacznie przyspieszyć poprzez:
 - optymalizację Windows.
 
 Dobrze wykonana konserwacja może dać komputerowi drugie życie.
+.
