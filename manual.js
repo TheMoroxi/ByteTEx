@@ -1,49 +1,61 @@
-const params =
-new URLSearchParams(
-window.location.search
+const params = new URLSearchParams(
+    window.location.search
 );
 
+const file = params.get("file");
 
-const file =
-params.get("file");
-
-
-const title =
-document.getElementById("title");
+const title = document.getElementById("title");
+const content = document.getElementById("content");
 
 
-const content =
-document.getElementById("content");
+if (!file) {
 
+    content.innerHTML = "Nie podano instrukcji";
+
+}
+else {
 
 
 fetch(file)
 
-.then(response =>
-response.text()
-)
+.then(response => {
+
+    if (!response.ok) {
+        throw new Error("Nie znaleziono pliku: " + file);
+    }
+
+    return response.text();
+
+})
+
 
 .then(markdown => {
 
 
-content.innerHTML =
-marked.parse(markdown);
+    console.log(markdown); // sprawdzenie co pobiera
 
 
-title.innerText =
-file
-.split("/")
-.pop()
-.replace(".md","");
+    content.innerHTML =
+    marked.parse(markdown);
+
+
+    title.innerText =
+    file
+    .split("/")
+    .pop()
+    .replace(".md","");
 
 
 })
 
-.catch(()=>{
+
+.catch(error => {
 
 
-content.innerHTML =
-"Nie znaleziono instrukcji";
+    content.innerHTML =
+    "Błąd: " + error;
 
 
 });
+
+}
