@@ -1,7 +1,9 @@
 # Wymiana baterii Samsung
 
 ## Poziom trudności
+
 ⭐⭐⭐ Średni
+
 
 ## Potrzebne narzędzia
 
