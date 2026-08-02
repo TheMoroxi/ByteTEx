@@ -1,329 +1,128 @@
-* {
-    box-sizing: border-box;
-}
+/* ==========================
+   TECHARCHIVE ENHANCEMENTS
+========================== */
 
 
-body {
-
-    margin: 0;
-
-    font-family:
-    "Segoe UI",
-    Arial,
-    sans-serif;
-
-    background:
-    linear-gradient(135deg,#0f172a,#1e40af);
-
-    color: white;
-
-    min-height: 100vh;
-
-}
-
-
-
-header {
-
-    text-align: center;
-
-    padding: 40px 20px;
-
-}
-
-
-
-.logo {
-
-    font-size: 42px;
-
-    font-weight: bold;
-
-}
-
-
-
-header p {
-
-    color: #cbd5e1;
-
-    font-size: 20px;
-
-}
-
-
-
-#search {
-
-    width: 80%;
-
-    max-width: 600px;
-
-    padding: 15px 20px;
-
-    border-radius: 15px;
-
-    border: none;
-
-    font-size: 18px;
-
-    margin-top: 20px;
-
-}
-
-
-
-main {
-
-    width: 90%;
-
-    max-width: 1000px;
-
-    margin: auto;
-
-}
-
-
-
-h1,h2 {
-
-    margin-top: 30px;
-
-}
-
-
-
-.categories {
-
-    display: flex;
-
-    gap: 15px;
-
-    flex-wrap: wrap;
-
-}
-
-
-
-.categories button {
-
-    background: rgba(255,255,255,0.15);
-
-    color: white;
-
-    border: none;
-
-    padding: 15px 25px;
-
-    border-radius: 15px;
-
-    cursor: pointer;
-
-    font-size: 16px;
-
-}
-
-
-
-.categories button:hover {
-
-    background: rgba(255,255,255,0.3);
-
-}
-
-
-
-#manuals {
-
-    display: grid;
-
-    grid-template-columns:
-
-    repeat(auto-fit,minmax(280px,1fr));
-
-    gap: 20px;
-
-}
-
-
+/* Karty instrukcji */
 
 .card {
 
+    transition:0.3s;
+
+    border:1px solid rgba(255,255,255,0.1);
+
+}
+
+
+.card:hover {
+
+    transform:translateY(-8px);
+
     background:
-
-    rgba(255,255,255,0.12);
-
-    backdrop-filter:
-
-    blur(10px);
-
-    padding: 25px;
-
-    border-radius: 20px;
-
-    box-shadow:
-
-    0 10px 30px rgba(0,0,0,0.3);
+    rgba(255,255,255,0.18);
 
 }
 
 
 
-.card h3 {
+/* Ikony kategorii */
 
-    margin-top: 0;
+.category-icon {
 
-}
+    font-size:35px;
 
+    display:block;
 
-
-.card p {
-
-    color:#ddd;
+    margin-bottom:10px;
 
 }
 
 
 
-.card a {
+/* Poziom trudności */
+
+.level {
 
     display:inline-block;
 
-    margin-top:15px;
-
-    background:#22c55e;
-
-    color:white;
-
-    text-decoration:none;
-
-    padding:12px 25px;
-
-    border-radius:12px;
-
-    font-weight:bold;
-
-}
-
-
-
-.card a:hover {
-
-    background:#16a34a;
-
-}
-
-
-
-#content {
-
-
-    background:
-
-    rgba(0,0,0,0.25);
-
-
-    padding:30px;
-
+    padding:6px 15px;
 
     border-radius:20px;
 
+    font-size:14px;
 
-    margin-top:30px;
+    margin-top:10px;
+
+}
 
 
-    line-height:1.7;
+.easy {
+
+    background:#22c55e;
+
+}
 
 
-    font-size:18px;
+.medium {
 
+    background:#eab308;
+
+    color:black;
+
+}
+
+
+.hard {
+
+    background:#ef4444;
 
 }
 
 
 
-#content h1 {
+/* Lista narzędzi */
 
-    font-size:38px;
+.tools {
 
-    color:#93c5fd;
+    background:
+    rgba(255,255,255,0.08);
+
+    padding:20px;
+
+    border-radius:15px;
+
+}
+
+
+.tools li {
+
+    margin:10px;
 
 }
 
 
 
-#content h2 {
+/* Zdjęcia instrukcji */
 
-    color:#60a5fa;
+.manual-image {
 
-    margin-top:35px;
+    width:100%;
 
-}
+    border-radius:20px;
 
-
-
-#content ul,
-#content ol {
-
-    padding-left:35px;
+    margin:20px 0;
 
 }
 
 
 
-#content li {
+/* Przyciski powrotu */
 
-    margin:8px;
-
-}
-
-
-
-#content strong {
-
-    color:#22c55e;
-
-}
-
-
-
-#content code {
-
-    background:#111827;
-
-    padding:5px 10px;
-
-    border-radius:8px;
-
-}
-
-
-
-#content blockquote {
-
-    border-left:5px solid #22c55e;
-
-    padding-left:20px;
-
-    color:#ddd;
-
-}
-
-
-
-a {
-
-    color:white;
-
-}
-
-
-
-main > a {
+.back {
 
     display:inline-block;
 
-    margin-top:30px;
+    margin-top:20px;
 
     background:#2563eb;
 
@@ -336,8 +135,7 @@ main > a {
 }
 
 
-
-main > a:hover {
+.back:hover {
 
     background:#1d4ed8;
 
@@ -345,42 +143,96 @@ main > a:hover {
 
 
 
+/* Wyszukiwarka */
+
+#search:focus {
+
+    outline:none;
+
+    box-shadow:
+
+    0 0 0 4px rgba(96,165,250,0.4);
+
+}
+
+
+
+/* Stopka */
+
 footer {
 
-    text-align:center;
+    border-top:
 
-    color:#aaa;
+    1px solid rgba(255,255,255,0.1);
 
-    padding:40px;
+}
 
-    margin-top:40px;
+
+/* Tabele w instrukcjach */
+
+table {
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin:20px 0;
+
+}
+
+
+td,th {
+
+    padding:12px;
+
+    border-bottom:
+
+    1px solid rgba(255,255,255,0.2);
 
 }
 
 
 
-@media(max-width:600px){
+/* Ostrzeżenia */
 
+.warning {
 
-.logo {
-
-    font-size:32px;
-
-}
-
-
-#content {
+    background:#7f1d1d;
 
     padding:20px;
 
-}
+    border-radius:15px;
 
-
-.categories {
-
-    flex-direction:column;
+    border-left:6px solid #ef4444;
 
 }
 
+
+/* Informacje */
+
+.info {
+
+    background:#1e3a8a;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    border-left:6px solid #60a5fa;
+
+}
+
+
+/* Kod */
+
+pre {
+
+    background:#020617;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    overflow:auto;
 
 }
