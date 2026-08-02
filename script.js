@@ -1,38 +1,49 @@
-const search =
-document.getElementById("search");
+fetch("manuals.json")
+
+.then(response => response.json())
+
+.then(manuals => {
 
 
-const cards =
-document.querySelectorAll(".card");
+const container =
+document.getElementById("manuals");
 
 
-search.addEventListener(
-"input",
-function(){
-
-let text =
-search.value.toLowerCase();
+manuals.forEach(manual => {
 
 
-cards.forEach(card=>{
+const card = document.createElement("div");
 
-let content =
-card.innerText.toLowerCase();
+card.className = "card";
+
+card.dataset.category = manual.category;
 
 
-if(content.includes(text)){
+card.innerHTML = `
 
-card.style.display="block";
+<h3>${manual.title}</h3>
 
-}
+<p>
+${manual.description}
+</p>
 
-else{
+<a href="manual.html?file=${manual.file}">
+Czytaj →
+</a>
 
-card.style.display="none";
+`;
 
-}
+
+container.appendChild(card);
+
 
 });
 
+
+})
+
+.catch(error => {
+
+console.log("Błąd JSON:", error);
 
 });
