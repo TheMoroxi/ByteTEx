@@ -1,89 +1,131 @@
-<section class="manuals">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
 
-<h2>📚 Instrukcje techniczne</h2>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="cards">
+<title>TechArchive | Baza wiedzy technicznej</title>
 
-<a href="manuals/wymiana-baterii.html">
-🔋 Wymiana baterii w telefonie
+<meta name="description" content="TechArchive - darmowa baza instrukcji, poradników i wiedzy technicznej.">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+⚙ TechArchive
+</div>
+
+<p>
+Twoje archiwum wiedzy technicznej
+</p>
+
+<input 
+id="search"
+type="text"
+placeholder="🔍 Szukaj instrukcji..."
+>
+
+</header>
+
+
+<main>
+
+
+<h2>📚 Kategorie</h2>
+
+
+<div class="categories">
+
+<button>📱 Telefony</button>
+<button>💻 Komputery</button>
+<button>🔧 Elektronika</button>
+<button> Software</button>
+
+</div>
+
+
+
+<h2>📝 Instrukcje</h2>
+
+
+<section id="manuals">
+
+
+
+<div class="card">
+
+<h3>📱 Wymiana baterii telefonu</h3>
+
+<p>
+Instrukcja demontażu i bezpiecznej wymiany baterii.
+</p>
+
+<a href="manual.html?file=samsung-bateria.md">
+Czytaj →
 </a>
 
-<a href="manuals/wymiana-ekranu.html">
-📱 Wymiana ekranu w telefonie
-</a>
 
-<a href="manuals/czyszczenie-telefonu.html">
-🧹 Czyszczenie telefonu z kurzu
-</a>
+</div>
 
-<a href="manuals/wymiana-gniazda-ladowania.html">
-🔌 Wymiana gniazda ładowania
-</a>
 
-<a href="manuals/diagnostyka-baterii.html">
-⚡ Diagnostyka baterii telefonu
-</a>
 
-<a href="manuals/reset-android.html">
-🤖 Reset telefonu Android
-</a>
+<div class="card">
 
-<a href="manuals/tryb-recovery.html">
-🛠 Tryb Recovery Android
-</a>
+<h3>💻 Instalacja Windows</h3>
 
-<a href="manuals/adb-fastboot.html">
-💻 ADB i Fastboot - podstawy
-</a>
+<p>
+Przygotowanie pendrive i instalacja systemu.
+</p>
 
-<a href="manuals/instalacja-windows.html">
-🪟 Instalacja Windows
-</a>
-
-<a href="manuals/naprawa-systemu-windows.html">
-🔧 Naprawa systemu Windows
-</a>
-
-<a href="manuals/czyszczenie-komputera.html">
-🖥 Czyszczenie komputera
-</a>
-
-<a href="manuals/wymiana-pasty-termicznej.html">
-❄ Wymiana pasty termicznej
-</a>
-
-<a href="manuals/montaz-ram.html">
-💾 Montaż pamięci RAM
-</a>
-
-<a href="manuals/montaz-dysku.html">
-💿 Montaż dysku SSD
-</a>
-
-<a href="manuals/diagnostyka-pc.html">
-🔍 Diagnostyka komputera
-</a>
-
-<a href="manuals/podstawy-lutowania.html">
-🔧 Podstawy lutowania
-</a>
-
-<a href="manuals/miernik-multimetr.html">
-📏 Używanie multimetru
-</a>
-
-<a href="manuals/naprawa-pilota.html">
-🎮 Naprawa elektroniki domowej
-</a>
-
-<a href="manuals/backup-danych.html">
-☁ Kopia zapasowa danych
-</a>
-
-<a href="manuals/bezpieczne-czyszczenie.html">
-🧽 Bezpieczne czyszczenie elektroniki
+<a href="manual.html?file=windows-instalacja.md">
+Czytaj →
 </a>
 
 </div>
 
+
+
+
+<div class="card">
+
+<h3>🔧 Podstawy lutowania</h3>
+
+<p>
+Narzędzia, techniki i pierwsze projekty DIY.
+</p>
+
+<a href="#">
+Czytaj →
+</a>
+
+</div>
+
+
+
 </section>
+
+
+</main>
+
+
+
+<footer>
+
+© 2026 TechArchive  
+<br>
+Open Knowledge Project
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
