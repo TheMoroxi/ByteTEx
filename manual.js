@@ -1,3 +1,4 @@
+
 const params =
 new URLSearchParams(
 window.location.search
@@ -62,6 +63,16 @@ markdown
 
 
 
+if(typeof marked === "undefined"){
+
+throw new Error(
+"Nie załadowano biblioteki Markdown"
+);
+
+}
+
+
+
 content.innerHTML =
 marked.parse(markdown);
 
@@ -71,7 +82,9 @@ title.innerText =
 file
 .split("/")
 .pop()
-.replace(".md","");
+.replace(".md","")
+.replaceAll("-"," ");
+
 
 
 })
