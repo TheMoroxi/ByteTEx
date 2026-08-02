@@ -1,30 +1,53 @@
-const params = new URLSearchParams(
-    window.location.search
+const params =
+new URLSearchParams(
+window.location.search
 );
 
-const file = params.get("file");
 
-const title = document.getElementById("title");
-const content = document.getElementById("content");
+const file =
+params.get("file");
 
 
-if (!file) {
+const title =
+document.getElementById("title");
 
-    content.innerHTML = "Nie podano instrukcji";
+
+const content =
+document.getElementById("content");
+
+
+
+console.log("Ładowany plik:", file);
+
+
+
+if(!file){
+
+content.innerHTML =
+"Nie podano instrukcji.";
 
 }
-else {
+
+else{
 
 
 fetch(file)
 
+
 .then(response => {
 
-    if (!response.ok) {
-        throw new Error("Nie znaleziono pliku: " + file);
-    }
 
-    return response.text();
+if(!response.ok){
+
+throw new Error(
+"Nie znaleziono pliku: " + file
+);
+
+}
+
+
+return response.text();
+
 
 })
 
@@ -32,18 +55,23 @@ fetch(file)
 .then(markdown => {
 
 
-    console.log(markdown); // sprawdzenie co pobiera
+console.log(
+"Treść MD:",
+markdown
+);
 
 
-    content.innerHTML =
-    marked.parse(markdown);
+
+content.innerHTML =
+marked.parse(markdown);
 
 
-    title.innerText =
-    file
-    .split("/")
-    .pop()
-    .replace(".md","");
+
+title.innerText =
+file
+.split("/")
+.pop()
+.replace(".md","");
 
 
 })
@@ -52,10 +80,11 @@ fetch(file)
 .catch(error => {
 
 
-    content.innerHTML =
-    "Błąd: " + error;
+content.innerHTML =
+"Błąd: " + error;
 
 
 });
+
 
 }
