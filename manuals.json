@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Wymiana baterii Samsung",
+        "category": "Telefony",
+        "file": "manuals/samsung-bateria.md"
+    },
+
+    {
+        "title": "Instalacja Windows 11",
+        "category": "Komputery",
+        "file": "manuals/windows11.md"
+    },
+
+    {
+        "title": "Podstawy lutowania",
+        "category": "Elektronika",
+        "file": "manuals/lutowanie.md"
+    }
+]
