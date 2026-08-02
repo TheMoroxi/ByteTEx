@@ -1,19 +1,71 @@
 [
-    {
-        "title": "Wymiana baterii Samsung",
-        "category": "Telefony",
-        "file": "manuals/samsung-bateria.md"
-    },
+  {
+    "title": "📱 Wymiana baterii telefonu",
+    "description": "Instrukcja demontażu i bezpiecznej wymiany baterii.",
+    "category": "telefony",
+    "file": "samsung-bateria.md"
+  },
 
-    {
-        "title": "Instalacja Windows 11",
-        "category": "Komputery",
-        "file": "manuals/windows11.md"
-    },
+  {
+    "title": "💻 Instalacja Windows",
+    "description": "Przygotowanie pendrive i instalacja systemu.",
+    "category": "komputery",
+    "file": "windows-instalacja.md"
+  },
 
-    {
-        "title": "Podstawy lutowania",
-        "category": "Elektronika",
-        "file": "manuals/lutowanie.md"
-    }
+  {
+    "title": "🔧 Podstawy lutowania",
+    "description": "Narzędzia, techniki i pierwsze projekty DIY.",
+    "category": "elektronika",
+    "file": "Lutowanie.md"
+  },
+
+  {
+    "title": "📱 Wymiana ekranu telefonu",
+    "description": "Instrukcja demontażu i bezpiecznej wymiany ekranu.",
+    "category": "telefony",
+    "file": "ekran-universal.md"
+  },
+
+  {
+    "title": "🖥️ Czyszczenie komputera PC",
+    "description": "Instrukcja czyszczenia komputera, usuwania kurzu i poprawy chłodzenia.",
+    "category": "komputery",
+    "file": "czyszczenie-pc.md"
+  },
+
+  {
+    "title": "💾 Instalacja sterowników Windows",
+    "description": "Jak poprawnie zainstalować sterowniki do karty graficznej, dźwięku i urządzeń.",
+    "category": "komputery",
+    "file": "sterowniki-windows.md"
+  },
+
+  {
+    "title": "⚡ Przyspieszanie starego komputera",
+    "description": "Optymalizacja systemu, czyszczenie plików i podstawowe ulepszenia sprzętu.",
+    "category": "komputery",
+    "file": "przyspieszanie-pc.md"
+  },
+
+  {
+    "title": "🔋 Diagnostyka problemów z komputerem",
+    "description": "Podstawowe sprawdzanie usterek sprzętu i systemu.",
+    "category": "komputery",
+    "file": "diagnostyka-pc.md"
+  },
+
+  {
+    "title": "🔋 Wymiana apratu różne modele",
+    "description": "Bezpieczna wymiana aparatu aż w 50 popularnych modelach.",
+    "category": "telefony",
+    "file": "wymiana-apartu.md"
+  },
+
+  {
+    "title": "🎮 Naprawa konsol Xbox",
+    "description": "Bezpieczna oraz szybka naprawa konsol Xbox.",
+    "category": "konsole",
+    "file": "xbox-repair.md"
+  }
 ]
