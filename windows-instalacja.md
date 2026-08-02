@@ -9,7 +9,7 @@
 
 - Pendrive minimum 8 GB
 - Komputer z dostępem do internetu
-- Program do tworzenia nośnika instalacyjnego
+- Program do tworzenia nośnika instalacyjnego np rufus
 - Klucz produktu Windows (opcjonalnie)
 
 
