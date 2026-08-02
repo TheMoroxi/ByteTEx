@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -46,6 +47,7 @@ placeholder=" Szukaj instrukcji..."
 <button onclick="filterCategory('komputery')">💻 Komputery</button>
 <button onclick="filterCategory('elektronika')">🔧 Elektronika</button>
 <button onclick="filterCategory('software')">💻 Software</button>
+<button onclick="filterCategory('konsole')">🎮 Konsole</button>
 <button onclick="filterCategory('all')">📚 Wszystkie</button>
   
 </div>
@@ -59,7 +61,7 @@ placeholder=" Szukaj instrukcji..."
 
 
 
-<div class="card">
+<div class="card" data-category="telefony">
 
 <h3>📱 Wymiana baterii telefonu</h3>
 
@@ -76,7 +78,7 @@ Czytaj →
 
 
 
-<div class="card">
+<div class="card" data-category="komputery">
 
 <h3>💻 Instalacja Windows</h3>
 
@@ -93,7 +95,7 @@ Czytaj →
 
 
 
-<div class="card">
+<div class="card" data-category="elektronika">
 
 <h3>🔧 Podstawy lutowania</h3>
 
@@ -107,7 +109,8 @@ Czytaj →
 
 </div>
 
-<div class="card">
+
+<div class="card" data-category="telefony">
 
 <h3>📱 Wymiana ekranu telefonu</h3>
 
@@ -121,7 +124,8 @@ Czytaj →
 
 </div>
 
-  <div class="card">
+
+<div class="card" data-category="komputery">
 
 <h3>🖥️ Czyszczenie komputera PC</h3>
 
@@ -137,7 +141,7 @@ Czytaj →
 
 
 
-<div class="card">
+<div class="card" data-category="komputery">
 
 <h3>💾 Instalacja sterowników Windows</h3>
 
@@ -153,7 +157,7 @@ Czytaj →
 
 
 
-<div class="card">
+<div class="card" data-category="komputery">
 
 <h3>⚡ Przyspieszanie starego komputera</h3>
 
@@ -169,7 +173,7 @@ Czytaj →
 
 
 
-<div class="card">
+<div class="card" data-category="komputery">
 
 <h3>🔋 Diagnostyka problemów z komputerem</h3>
 
@@ -183,12 +187,13 @@ Czytaj →
 
 </div>
 
-<div class="card">
+
+<div class="card" data-category="telefony">
 
 <h3>🔋 Wymiana apratu rożne modele </h3>
 
 <p>
-Bezpieczna wymiana aparatu aż w 50  popularnych modelach.
+Bezpieczna wymiana aparatu aż w 50 popularnych modelach.
 </p>
 
 <a href="manual.html?file=wymiana-apartu.md">
@@ -197,10 +202,10 @@ Czytaj →
 
 </div>
 
-  
-<div class="card">
 
-<h3>🔋 Naprawa konsol Xbox - kompletna instrukcja serwisowa  </h3>
+<div class="card" data-category="konsole">
+
+<h3>🎮 Naprawa konsol Xbox - kompletna instrukcja serwisowa</h3>
 
 <p>
 Bezpieczna oraz szybka naprawa konsol xbox.
