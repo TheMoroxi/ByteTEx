@@ -123,3 +123,20 @@ document.getElementById("search").addEventListener("input", function(){
 
 
 });
+function showAll(){
+
+    document.getElementById("search").value="";
+
+    history.replaceState(
+        null,
+        "",
+        "index.html"
+    );
+
+    document.querySelectorAll(".card").forEach(card=>{
+
+        card.style.display="block";
+
+    });
+
+}
