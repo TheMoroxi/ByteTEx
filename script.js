@@ -140,31 +140,30 @@ function showAll(){
     });
 
 }
-function showAll(){
-
-    document.getElementById("search").value="";
-
-    history.replaceState(
-        null,
-        "",
-        "index.html"
-    );
-
-    loadCards(manuals);
-
-}
-
 
 
 function filterCategory(category){
 
-    const filtered = manuals.filter(manual => {
+    const cards = document.querySelectorAll(".card");
 
-        return category === "all" || manual.category === category;
+    cards.forEach(card => {
+
+        if(category === "all"){
+
+            card.style.display = "block";
+
+        }
+        else if(card.dataset.category === category){
+
+            card.style.display = "block";
+
+        }
+        else{
+
+            card.style.display = "none";
+
+        }
 
     });
-
-
-    loadCards(filtered);
 
 }
