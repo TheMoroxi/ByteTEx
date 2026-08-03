@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://themoroxi.github.io/ByteTEx/sitemap.xml
