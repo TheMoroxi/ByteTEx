@@ -9,7 +9,7 @@
     "title": "🪟 Naprawa Windows CMD",
     "description": "Zbiór komend CMD do naprawy plików systemowych, dysku i problemów z uruchamianiem Windows.",
     "category": "windows",
-    "file": "windows-repair.html"
+    "file": "windows-code.html"
   },
   {
     "title": "⚡ Benchmark komputera",
@@ -22,41 +22,5 @@
     "description": "Narzędzie do sprawdzania podstawowych informacji o połączeniu sieciowym.",
     "category": "sieci",
     "file": "internet-test.html"
-  },
-  {
-    "title": "💾 Informacje o komputerze",
-    "description": "Pokazuje dane przeglądarki, procesora, pamięci RAM i ekranu.",
-    "category": "diagnostyka",
-    "file": "system-info.html"
-  },
-  {
-    "title": "🔋 Test baterii",
-    "description": "Sprawdza informacje o baterii urządzenia jeśli przeglądarka udostępnia takie dane.",
-    "category": "diagnostyka",
-    "file": "battery-test.html"
-  },
-  {
-    "title": "📱 Generator QR",
-    "description": "Tworzenie kodów QR bez instalowania programu.",
-    "category": "narzedzia",
-    "file": "qr-generator.html"
-  },
-  {
-    "title": "🔐 Generator haseł",
-    "description": "Tworzenie bezpiecznych losowych haseł.",
-    "category": "bezpieczenstwo",
-    "file": "password-generator.html"
-  },
-  {
-    "title": "🧮 Kalkulator elektronika",
-    "description": "Obliczanie rezystorów, napięcia, mocy i podstaw elektroniki.",
-    "category": "elektronika",
-    "file": "electronics-calculator.html"
-  },
-  {
-    "title": "📡 Skaner informacji sieci",
-    "description": "Wyświetla dostępne informacje sieciowe udostępniane przez przeglądarkę.",
-    "category": "sieci",
-    "file": "network-info.html"
-  }
+}
 ]
