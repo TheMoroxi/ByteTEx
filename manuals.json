@@ -130,13 +130,115 @@
     "description": "Podstawowe sprawdzanie uszkodzeń płyty głównej komputera.",
     "category": "elektronika",
     "file": "diagnostyka-plyty-glownej.md"
-  }
+  },
   {
   "title": "🎮 Naprawa PlayStation PS4 PS5",
   "description": "Diagnostyka i naprawa konsol PlayStation 4 oraz PlayStation 5.",
   "category": "konsole",
   "file": "naprawa-playstation.md"
 }
-  
+  ,
+{
+  "title": "🖥️ Aktualizacja BIOS / UEFI",
+  "description": "Instrukcja bezpiecznej aktualizacji BIOS lub UEFI oraz przygotowania komputera.",
+  "category": "komputery",
+  "file": "aktualizacja-bios.md"
+},
+{
+  "title": "💽 Wymiana dysku HDD na SSD",
+  "description": "Poradnik wymiany dysku oraz migracji systemu na szybki dysk SSD.",
+  "category": "komputery",
+  "file": "wymiana-dysku-ssd.md"
+},
+{
+  "title": "🪟 Naprawa uruchamiania Windows",
+  "description": "Rozwiązywanie problemów z uruchamianiem systemu Windows.",
+  "category": "software",
+  "file": "naprawa-startu-windows.md"
+},
+{
+  "title": "📟 Podstawy używania multimetru",
+  "description": "Jak mierzyć napięcie, rezystancję i sprawdzać ciągłość obwodu.",
+  "category": "elektronika",
+  "file": "multimetr-podstawy.md"
+},
+{
+  "title": "🧰 Lutowanie elementów SMD",
+  "description": "Podstawy lutowania elementów montowanych powierzchniowo.",
+  "category": "elektronika",
+  "file": "lutowanie-smd.md"
+},
+{
+  "title": "📱 Reset telefonu Android",
+  "description": "Przywracanie ustawień fabrycznych telefonów z Androidem.",
+  "category": "telefony",
+  "file": "android-reset.md"
+},
+{
+  "title": "📂 Odzyskiwanie danych Android",
+  "description": "Podstawowe sposoby odzyskiwania danych z urządzeń z Androidem.",
+  "category": "telefony",
+  "file": "odzyskiwanie-android.md"
+},
+{
+  "title": "🔌 Wymiana portu USB-C",
+  "description": "Diagnostyka oraz wymiana uszkodzonego złącza USB-C.",
+  "category": "telefony",
+  "file": "wymiana-usb-c.md"
+},
+{
+  "title": "🧹 Czyszczenie systemu Windows",
+  "description": "Usuwanie plików tymczasowych, cache oraz zbędnych danych systemowych.",
+  "category": "software",
+  "file": "czyszczenie-windows.md"
+},
+{
+  "title": "⚠️ Bezpieczeństwo podczas napraw elektroniki",
+  "description": "Zasady bezpiecznej pracy z urządzeniami elektronicznymi oraz ochrona ESD.",
+  "category": "elektronika",
+  "file": "bezpieczenstwo-elektronika.md"
+},
+{
+  "title": "🧠 Instalacja i wymiana pamięci RAM",
+  "description": "Montaż pamięci RAM oraz sprawdzanie kompatybilności modułów.",
+  "category": "komputery",
+  "file": "instalacja-ram.md"
+},
+{
+  "title": "🎮 Diagnostyka karty graficznej",
+  "description": "Sprawdzanie temperatur, sterowników oraz usterek kart graficznych.",
+  "category": "komputery",
+  "file": "diagnostyka-karty-graficznej.md"
+},
+{
+  "title": "🌡️ Wymiana pasty termicznej",
+  "description": "Instrukcja wymiany pasty termicznej procesora i poprawy chłodzenia.",
+  "category": "komputery",
+  "file": "wymiana-pasty-termicznej.md"
+},
+{
+  "title": "🖥️ Instalacja sterowników GPU",
+  "description": "Prawidłowa instalacja sterowników kart graficznych NVIDIA, AMD i Intel.",
+  "category": "software",
+  "file": "instalacja-sterownikow-gpu.md"
+},
+{
+  "title": "📡 Naprawa routera",
+  "description": "Diagnostyka problemów z routerem i połączeniem internetowym.",
+  "category": "komputery",
+  "file": "naprawa-routera.md"
+},
+{
+  "title": "📶 Konfiguracja sieci Wi-Fi",
+  "description": "Konfiguracja sieci bezprzewodowej oraz zabezpieczeń routera.",
+  "category": "komputery",
+  "file": "konfiguracja-wifi.md"
+},
+{
+  "title": "🖨️ Naprawa drukarki",
+  "description": "Diagnostyka i rozwiązywanie najczęstszych problemów z drukarkami.",
+  "category": "komputery",
+  "file": "naprawa-drukarki.md"
+}
 ]
 
