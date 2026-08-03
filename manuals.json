@@ -136,8 +136,7 @@
   "description": "Diagnostyka i naprawa konsol PlayStation 4 oraz PlayStation 5.",
   "category": "konsole",
   "file": "naprawa-playstation.md"
-}
-  ,
+},
 {
   "title": "🖥️ Aktualizacja BIOS / UEFI",
   "description": "Instrukcja bezpiecznej aktualizacji BIOS lub UEFI oraz przygotowania komputera.",
