@@ -257,5 +257,11 @@
   "description": "Diagnostyka i naprawa konsol PlayStation 4 oraz PlayStation 5.",
   "category": "konsole",
   "file": "naprawa-playstation.md"
+},
+{
+"title":"🛡️ Test zabezpieczeń przeglądarki",
+"description":"Sprawdź funkcje bezpieczeństwa swojej przeglądarki.",
+"category":"narzędzia",
+"file":"browser-test.html"
 }
 ]
