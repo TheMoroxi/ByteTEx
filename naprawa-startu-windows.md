@@ -21,3 +21,7 @@ Można użyć:
 - wiersza poleceń.
 
 Przykładowe polecenie:
+
+<a href="windows-code.html">
+🛠️ Otwórz narzędzia CMD Windows
+</a>
