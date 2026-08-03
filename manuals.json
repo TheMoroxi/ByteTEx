@@ -1,85 +1,71 @@
 [
   {
-    "title": "📱 Wymiana baterii telefonu",
-    "description": "Instrukcja demontażu i bezpiecznej wymiany baterii.",
+    "title": "🖥️ Montaż komputera PC krok po kroku",
+    "description": "Kompletny poradnik składania komputera z podzespołów.",
+    "category": "komputery",
+    "file": "montaz-pc.md"
+  },
+
+  {
+    "title": "🌡️ Diagnostyka przegrzewania komputera",
+    "description": "Jak znaleźć przyczynę wysokich temperatur procesora i karty graficznej.",
+    "category": "komputery",
+    "file": "przegrzewanie-pc.md"
+  },
+
+  {
+    "title": "💿 Instalacja Linux obok Windows",
+    "description": "Konfiguracja dual boot i podstawowa instalacja systemu Linux.",
+    "category": "software",
+    "file": "linux-dualboot.md"
+  },
+
+  {
+    "title": "🔐 Odzyskiwanie danych z dysku",
+    "description": "Podstawowe metody odzyskiwania utraconych plików.",
+    "category": "komputery",
+    "file": "odzyskiwanie-danych.md"
+  },
+
+  {
+    "title": "📡 Naprawa problemów z Wi-Fi",
+    "description": "Diagnostyka wolnego internetu i problemów z siecią.",
+    "category": "komputery",
+    "file": "problemy-wifi.md"
+  },
+
+  {
+    "title": "📱 Telefon po zalaniu - diagnostyka",
+    "description": "Co zrobić po kontakcie telefonu z wodą i jak ograniczyć uszkodzenia.",
     "category": "telefony",
-    "file": "samsung-bateria.md"
+    "file": "telefon-po-zalaniu.md"
   },
 
   {
-    "title": "💻 Instalacja Windows",
-    "description": "Przygotowanie pendrive i instalacja systemu.",
+    "title": "🔋 Wymiana baterii laptopa",
+    "description": "Bezpieczna wymiana baterii w popularnych laptopach.",
     "category": "komputery",
-    "file": "windows-instalacja.md"
+    "file": "wymiana-baterii-laptop.md"
   },
 
   {
-    "title": "🔧 Podstawy lutowania",
-    "description": "Narzędzia, techniki i pierwsze projekty DIY.",
-    "category": "elektronika",
-    "file": "Lutowanie.md"
-  },
-
-  {
-    "title": "📱 Wymiana ekranu telefonu",
-    "description": "Instrukcja demontażu i bezpiecznej wymiany ekranu.",
-    "category": "telefony",
-    "file": "ekran-universal.md"
-  },
-
-  {
-    "title": "🖥️ Czyszczenie komputera PC",
-    "description": "Instrukcja czyszczenia komputera, usuwania kurzu i poprawy chłodzenia.",
-    "category": "komputery",
-    "file": "czyszczenie-pc.md"
-  },
-
-  {
-    "title": "💾 Instalacja sterowników Windows",
-    "description": "Jak poprawnie zainstalować sterowniki do karty graficznej, dźwięku i urządzeń.",
-    "category": "komputery",
-    "file": "sterowniki-windows.md"
-  },
-
-  {
-    "title": "⚡ Przyspieszanie starego komputera",
-    "description": "Optymalizacja systemu, czyszczenie plików i podstawowe ulepszenia sprzętu.",
-    "category": "komputery",
-    "file": "przyspieszanie-pc.md"
-  },
-
-  {
-    "title": "🔋 Diagnostyka problemów z komputerem",
-    "description": "Podstawowe sprawdzanie usterek sprzętu i systemu.",
-    "category": "komputery",
-    "file": "diagnostyka-pc.md"
-  },
-
-  {
-    "title": "🔋 Wymiana apratu różne modele",
-    "description": "Bezpieczna wymiana aparatu aż w 50 popularnych modelach.",
-    "category": "telefony",
-    "file": "wymiana-apartu.md"
-  },
-
-  {
-    "title": "🎮 Naprawa konsol Xbox",
-    "description": "Bezpieczna oraz szybka naprawa konsol Xbox.",
+    "title": "🎮 Naprawa kontrolera Xbox",
+    "description": "Diagnostyka i naprawa pada Xbox oraz typowych usterek.",
     "category": "konsole",
-    "file": "xbox-repair.md"
+    "file": "naprawa-pada-xbox.md"
   },
+
+  {
+    "title": "🧹 Czyszczenie laptopa",
+    "description": "Usuwanie kurzu, wymiana pasty i poprawa chłodzenia laptopa.",
+    "category": "komputery",
+    "file": "czyszczenie-laptopa.md"
+  },
+
+  {
+    "title": "⚡ Diagnostyka płyty głównej",
+    "description": "Podstawowe sprawdzanie uszkodzeń płyty głównej komputera.",
+    "category": "elektronika",
+    "file": "diagnostyka-plyty-glownej.md"
+  }
 ]
-
-{
-  "title": "💻 Jak sprawdzić używany komputer przed zakupem",
-  "description": "Poradnik sprawdzania komputera przed zakupem: podzespoły, dysk, RAM, temperatury i wydajność.",
-  "category": "komputery",
-  "file": "sprawdzanie-uzywanego-komputera.md"
-},
-
-{
-  "title": "🎮 Naprawa Nintendo Switch V1 V2 OLED Lite",
-  "description": "Kompletna diagnostyka i naprawa konsol Nintendo Switch.",
-  "category": "konsole",
-  "file": "naprawa-nintendo-switch.md"
-}
