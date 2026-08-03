@@ -19,3 +19,7 @@ Wymiana USB-C wymaga:
 - lutowania,
 - doświadczenia,
 - odpowiednich narzędzi.
+
+<a href="advance-mode-repair-usb-c.htm">
+Advance Mode
+</a>
