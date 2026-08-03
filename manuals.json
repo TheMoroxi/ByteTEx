@@ -250,6 +250,121 @@
   "description": "Podstawowe sprawdzanie uszkodzeń płyty głównej komputera.",
   "category": "elektronika",
   "file": "diagnostyka-plyty-glownej.md"
-}
+},
+{
+  "title": "📱 Wymiana głośnika telefonu",
+  "description": "Diagnostyka i wymiana uszkodzonego głośnika w telefonach.",
+  "category": "telefony",
+  "file": "wymiana-glosnika.md"
+},
+{
+  "title": "📱 Naprawa przycisków telefonu",
+  "description": "Sprawdzanie i wymiana uszkodzonych przycisków telefonu.",
+  "category": "telefony",
+  "file": "naprawa-przyciskow-telefonu.md"
+},
 
+{
+  "title": "📲 Aktualizacja Androida",
+  "description": "Jak poprawnie aktualizować system Android i rozwiązywać problemy.",
+  "category": "software",
+  "file": "aktualizacja-android.md"
+},
+{
+  "title": "🖥️ Instalacja Windows 11",
+  "description": "Przygotowanie komputera i instalacja najnowszego Windows 11.",
+  "category": "software",
+  "file": "windows-11-instalacja.md"
+},
+{
+  "title": "💾 Klonowanie dysku systemowego",
+  "description": "Przenoszenie systemu Windows na nowy dysk.",
+  "category": "komputery",
+  "file": "klonowanie-dysku.md"
+},
+{
+  "title": "🔐 Zabezpieczanie komputera",
+  "description": "Podstawowe zasady ochrony komputera przed zagrożeniami.",
+  "category": "software",
+  "file": "zabezpieczenie-komputera.md"
+},
+{
+  "title": "🧪 Testowanie pamięci RAM",
+  "description": "Sprawdzanie pamięci RAM pod kątem błędów.",
+  "category": "komputery",
+  "file": "testowanie-ram.md"
+},
+{
+  "title": "⚙️ Konfiguracja BIOS",
+  "description": "Najważniejsze ustawienia BIOS dla początkujących.",
+  "category": "komputery",
+  "file": "konfiguracja-bios.md"
+},
+{
+  "title": "🔋 Diagnostyka baterii laptopa",
+  "description": "Sprawdzanie kondycji baterii i czasu pracy laptopa.",
+  "category": "komputery",
+  "file": "diagnostyka-baterii-laptopa.md"
+},
+{
+  "title": "📷 Naprawa aparatu telefonu",
+  "description": "Diagnoza problemów z aparatem w smartfonach.",
+  "category": "telefony",
+  "file": "naprawa-aparatu.md"
+},
+{
+  "title": "🎮 Czyszczenie konsoli",
+  "description": "Usuwanie kurzu i poprawa chłodzenia konsol.",
+  "category": "konsole",
+  "file": "czyszczenie-konsoli.md"
+},
+{
+  "title": "🕹️ Naprawa joysticka pada",
+  "description": "Wymiana analogów i naprawa driftu kontrolera.",
+  "category": "konsole",
+  "file": "naprawa-joysticka.md"
+},
+{
+  "title": "🌐 Podstawy sieci komputerowych",
+  "description": "Adresy IP, routery i podstawowa konfiguracja sieci.",
+  "category": "komputery",
+  "file": "podstawy-sieci.md"
+},
+{
+  "title": "💻 Formatowanie komputera",
+  "description": "Przygotowanie dysku i ponowna instalacja systemu.",
+  "category": "software",
+  "file": "formatowanie-komputera.md"
+},
+{
+  "title": "🧩 Wymiana procesora",
+  "description": "Jak bezpiecznie wymienić procesor w komputerze.",
+  "category": "komputery",
+  "file": "wymiana-procesora.md"
+},
+{
+  "title": "🖥️ Dobór podzespołów PC",
+  "description": "Jak dobrać procesor, RAM, kartę graficzną i zasilacz.",
+  "category": "komputery",
+  "file": "dobor-podzespolow.md"
+},
+{
+  "title": "🔍 Diagnostyka laptopa",
+  "description": "Podstawowe sprawdzanie usterek laptopów.",
+  "category": "komputery",
+  "file": "diagnostyka-laptopa.md"
+},
+{
+  "title": "🛠️ Narzędzia serwisanta",
+  "description": "Lista podstawowych narzędzi do napraw elektroniki.",
+  "category": "elektronika",
+  "file": "narzedzia-serwisanta.md"
+},
+{
+  "title": "📡 Diagnostyka Bluetooth",
+  "description": "Rozwiązywanie problemów z połączeniami Bluetooth.",
+  "category": "telefony",
+  "file": "diagnostyka-bluetooth.md"
+}
+ 
 ]
