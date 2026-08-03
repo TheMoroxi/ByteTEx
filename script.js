@@ -47,3 +47,31 @@ container.appendChild(card);
 console.log("Błąd JSON:", error);
 
 });
+const search = document.getElementById("search");
+
+
+search.addEventListener("input", function(){
+
+    const text = this.value.toLowerCase();
+
+    const cards = document.querySelectorAll(".card");
+
+
+    cards.forEach(card => {
+
+        const content = card.innerText.toLowerCase();
+
+
+        if(content.includes(text)){
+
+            card.style.display = "block";
+
+        } else {
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+});
