@@ -140,3 +140,31 @@ function showAll(){
     });
 
 }
+function showAll(){
+
+    document.getElementById("search").value="";
+
+    history.replaceState(
+        null,
+        "",
+        "index.html"
+    );
+
+    loadCards(manuals);
+
+}
+
+
+
+function filterCategory(category){
+
+    const filtered = manuals.filter(manual => {
+
+        return category === "all" || manual.category === category;
+
+    });
+
+
+    loadCards(filtered);
+
+}
