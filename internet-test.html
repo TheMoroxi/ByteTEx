@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TechArchive Internet Test</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#111;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.box{
+background:#222;
+padding:25px;
+border-radius:15px;
+max-width:600px;
+margin:auto;
+}
+
+button{
+padding:12px 25px;
+font-size:18px;
+cursor:pointer;
+border-radius:10px;
+}
+
+.result{
+margin-top:20px;
+text-align:left;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="box">
+
+<h1>🌐 Test internetu</h1>
+
+<p>
+Sprawdź podstawowe parametry połączenia.
+</p>
+
+
+<button onclick="startTest()">
+▶ Start testu
+</button>
+
+
+<div id="result" class="result"></div>
+
+
+</div>
+
+
+
+<script>
+
+
+async function startTest(){
+
+
+let result=document.getElementById("result");
+
+
+result.innerHTML="⏳ Testowanie...";
+
+
+
+// ping
+
+let start=performance.now();
+
+
+try{
+
+
+await fetch(
+"https://www.google.com/favicon.ico",
+{
+mode:"no-cors",
+cache:"no-store"
+}
+);
+
+
+let ping=Math.round(
+performance.now()-start
+);
+
+
+
+// download test
+
+let fileSize=500000;
+
+
+let downloadStart=performance.now();
+
+
+await fetch(
+"https://speed.cloudflare.com/__down?bytes="+fileSize
+);
+
+
+let time=
+(performance.now()-downloadStart)/1000;
+
+
+let speed=
+(fileSize/1024/1024)/time;
+
+
+
+result.innerHTML=`
+
+<h3>📊 Wynik</h3>
+
+<p>
+🏓 Ping:
+${ping} ms
+</p>
+
+
+<p>
+⬇️ Download:
+${speed.toFixed(2)} MB/s
+</p>
+
+
+<p>
+🌐 Online:
+TAK
+</p>
+
+
+<p>
+📡 Typ połączenia:
+${navigator.connection?.effectiveType || "nieznany"}
+</p>
+
+
+<p>
+📱 Urządzenie:
+${navigator.userAgent}
+</p>
+
+
+`;
+
+
+}
+
+catch(e){
+
+
+result.innerHTML=
+"❌ Nie udało się wykonać testu";
+
+
+}
+
+
+}
+
+
+
+</script>
+
+
+</body>
+</html>
