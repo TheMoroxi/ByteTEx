@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -5,298 +6,177 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TechArchive Browser Security Test</title>
+<title>TechArchive Browser Security Scanner</title>
 
 <style>
 
 body{
-    font-family:Arial;
-    background:#111;
+    background:#0f1115;
     color:white;
+    font-family:Arial, sans-serif;
+    margin:0;
     padding:20px;
 }
 
-.box{
-    background:#222;
-    padding:15px;
-    margin:10px 0;
-    border-radius:10px;
+.container{
+    max-width:900px;
+    margin:auto;
 }
 
-.good{
-    color:#00ff88;
+h1{
+    text-align:center;
+    color:#00ff99;
+}
+
+.card{
+    background:#181c24;
+    border-radius:12px;
+    padding:20px;
+    margin:15px 0;
+    box-shadow:0 0 10px #000;
+}
+
+.result{
+    display:flex;
+    justify-content:space-between;
+    padding:10px;
+    border-bottom:1px solid #333;
+}
+
+.ok{
+    color:#00ff99;
+}
+
+.warn{
+    color:#ffaa00;
 }
 
 .bad{
-    color:#ff5555;
+    color:#ff4444;
 }
 
+
+.progress{
+    width:100%;
+    height:25px;
+    background:#333;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.bar{
+    height:100%;
+    width:0%;
+    background:#00ff99;
+    transition:1s;
+}
+
+
 button{
-    padding:10px;
+
+    background:#00ff99;
+    border:0;
+    padding:12px 20px;
+    border-radius:8px;
     cursor:pointer;
+    font-weight:bold;
+
+}
+
+
+button:hover{
+    background:#00cc77;
+}
+
+
+.info{
+
+    background:#101318;
+    padding:10px;
+    border-radius:8px;
+
 }
 
 </style>
 
 </head>
 
+
 <body>
 
-<h1>🛡️ Browser Security Test</h1>
 
-<p>Test podstawowych zabezpieczeń przeglądarki.</p>
+<div class="container">
 
 
-<button onclick="runTests()">
-▶ Uruchom test
+<h1>
+🛡️ TechArchive Browser Security Scanner
+</h1>
+
+
+<div class="card">
+
+<h2>Wynik bezpieczeństwa</h2>
+
+<div class="progress">
+
+<div id="scoreBar" class="bar"></div>
+
+</div>
+
+<h3 id="score">
+0 / 100
+</h3>
+
+</div>
+
+
+
+<div class="card">
+
+<button onclick="startScan()">
+🚀 Uruchom skanowanie
 </button>
 
-
-<div id="results"></div>
-
+</div>
 
 
-<script>
 
-const results=document.getElementById("results");
+<div class="card">
 
+<h2>Testy przeglądarki</h2>
 
-function add(name,value,status){
+<div id="results">
 
-results.innerHTML += `
-
-<div class="box">
-
-<h3>${name}</h3>
-
-<p class="${status}">
-${value}
+<p>
+Kliknij skanowanie aby rozpocząć...
 </p>
 
 </div>
 
-`;
+</div>
 
-}
 
 
 
-function runTests(){
+<div class="card">
 
-results.innerHTML="";
+<h2>Informacje urządzenia</h2>
 
+<div id="device" class="info">
 
-/* HTTPS */
+Brak danych
 
-if(location.protocol==="https:"){
+</div>
 
-add(
-"🔒 HTTPS",
-"Strona używa szyfrowanego połączenia.",
-"good"
-);
+</div>
 
-}else{
 
-add(
-"🔒 HTTPS",
-"Brak HTTPS.",
-"bad"
-);
 
-}
+</div>
 
 
 
-/* JavaScript */
-
-add(
-"⚙ JavaScript",
-"JavaScript jest aktywny.",
-"good"
-);
-
-
-
-
-/* Cookies */
-
-if(navigator.cookieEnabled){
-
-add(
-"🍪 Cookies",
-"Cookies są włączone.",
-"good"
-);
-
-}else{
-
-add(
-"🍪 Cookies",
-"Cookies wyłączone.",
-"bad"
-);
-
-}
-
-
-
-/* LocalStorage */
-
-try{
-
-localStorage.setItem(
-"test",
-"ok"
-);
-
-localStorage.removeItem(
-"test"
-);
-
-
-add(
-"💾 LocalStorage",
-"Dostępny.",
-"good"
-);
-
-
-}catch(e){
-
-add(
-"💾 LocalStorage",
-"Zablokowany.",
-"bad"
-);
-
-}
-
-
-
-
-/* WebGL */
-
-let canvas=document.createElement("canvas");
-
-let gl=canvas.getContext("webgl");
-
-
-if(gl){
-
-add(
-"🎮 WebGL",
-"Dostępny.",
-"good"
-);
-
-}else{
-
-add(
-"🎮 WebGL",
-"Wyłączony.",
-"bad"
-);
-
-}
-
-
-
-/* User Agent */
-
-add(
-"🌐 Przeglądarka",
-navigator.userAgent,
-"good"
-);
-
-
-
-/* Online */
-
-if(navigator.onLine){
-
-add(
-"📡 Internet",
-"Połączenie aktywne.",
-"good"
-);
-
-}else{
-
-add(
-"📡 Internet",
-"Brak połączenia.",
-"bad"
-);
-
-}
-
-
-
-/* Geolocation */
-
-if("geolocation" in navigator){
-
-add(
-"📍 Geolokalizacja",
-"Przeglądarka obsługuje geolokalizację (wymaga zgody).",
-"good"
-);
-
-}else{
-
-add(
-"📍 Geolokalizacja",
-"Brak obsługi.",
-"bad"
-);
-
-}
-
-
-
-/* Notifications */
-
-if("Notification" in window){
-
-add(
-"🔔 Powiadomienia",
-"Obsługiwane.",
-"good"
-);
-
-}else{
-
-add(
-"🔔 Powiadomienia",
-"Brak obsługi.",
-"bad"
-);
-
-}
-
-
-
-/* HTTPS Security Headers info */
-
-add(
-"🛡️ Nagłówki bezpieczeństwa",
-"Sprawdź CSP, HSTS i X-Frame-Options w narzędziach deweloperskich.",
-"good"
-);
-
-
-
-}
-
-
-</script>
-
-
-<footer>
-© 2026 TechArchive
-</footer>
+<script src="scanner.js"></script>
 
 
 </body>
