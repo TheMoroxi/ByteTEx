@@ -1,77 +1,125 @@
+let manuals = [];
+
+const container = document.getElementById("manuals");
+
+
+// Ładowanie JSON
+
 fetch("manuals.json")
 
 .then(response => response.json())
 
-.then(manuals => {
+.then(data => {
+
+    manuals = data;
+
+    loadCards(manuals);
 
 
-const container =
-document.getElementById("manuals");
+    // sprawdzenie czy jest wyszukiwanie w URL
+
+    const params = new URLSearchParams(window.location.search);
+
+    const searchText = params.get("search");
 
 
-manuals.forEach(manual => {
+    if(searchText){
 
+        document.getElementById("search").value = searchText;
 
-const card = document.createElement("div");
+        searchCards(searchText);
 
-card.className = "card";
-
-card.dataset.category = manual.category;
-
-
-card.innerHTML = `
-
-<h3>${manual.title}</h3>
-
-<p>
-${manual.description}
-</p>
-
-<a href="manual.html?file=${manual.file}">
-Czytaj →
-</a>
-
-`;
-
-
-container.appendChild(card);
+    }
 
 
 });
 
 
-})
 
-.catch(error => {
+// tworzenie kart
 
-console.log("Błąd JSON:", error);
-
-});
-const search = document.getElementById("search");
+function loadCards(list){
 
 
-search.addEventListener("input", function(){
+    container.innerHTML = "";
 
-    const text = this.value.toLowerCase();
+
+    list.forEach(manual => {
+
+
+        container.innerHTML += `
+
+        <div class="card" data-category="${manual.category}">
+
+            <h3>${manual.title}</h3>
+
+            <p>${manual.description}</p>
+
+            <a href="manual.html?file=${manual.file}">
+            Czytaj →
+            </a>
+
+        </div>
+
+        `;
+
+
+    });
+
+
+}
+
+
+
+// wyszukiwanie
+
+function searchCards(text){
+
 
     const cards = document.querySelectorAll(".card");
 
-
-    cards.forEach(card => {
-
-        const content = card.innerText.toLowerCase();
+    text = text.toLowerCase();
 
 
-        if(content.includes(text)){
+    cards.forEach(card=>{
 
-            card.style.display = "block";
 
-        } else {
+        if(card.innerText.toLowerCase().includes(text)){
 
-            card.style.display = "none";
+            card.style.display="block";
 
         }
 
+        else{
+
+            card.style.display="none";
+
+        }
+
+
     });
+
+
+}
+
+
+
+// pole wyszukiwania
+
+document.getElementById("search").addEventListener("input", function(){
+
+
+    let value = this.value;
+
+
+    history.replaceState(
+        null,
+        "",
+        value ? "?search=" + value : "index.html"
+    );
+
+
+    searchCards(value);
+
 
 });
