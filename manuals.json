@@ -76,3 +76,10 @@
   "category": "komputery",
   "file": "sprawdzanie-uzywanego-komputera.md"
 }
+
+{
+  "title": "🎮 Naprawa Nintendo Switch V1 V2 OLED Lite",
+  "description": "Kompletna diagnostyka i naprawa konsol Nintendo Switch.",
+  "category": "konsole",
+  "file": "naprawa-nintendo-switch.md"
+}
