@@ -133,6 +133,6 @@ Sprawdź:
 
 ---
 
-# Wskazówka TechArchive
+# Wskazówka ByteTEx
 
 Przed rozpoczęciem zawsze sprawdź instrukcję dla konkretnego modelu telefonu, ponieważ różne urządzenia mają inne rozmieszczenie śrub, złączy i sposób otwierania.
