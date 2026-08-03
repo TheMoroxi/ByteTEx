@@ -67,7 +67,7 @@
     "description": "Bezpieczna oraz szybka naprawa konsol Xbox.",
     "category": "konsole",
     "file": "xbox-repair.md"
-  }
+  },
 ]
 
 {
@@ -75,7 +75,7 @@
   "description": "Poradnik sprawdzania komputera przed zakupem: podzespoły, dysk, RAM, temperatury i wydajność.",
   "category": "komputery",
   "file": "sprawdzanie-uzywanego-komputera.md"
-}
+},
 
 {
   "title": "🎮 Naprawa Nintendo Switch V1 V2 OLED Lite",
