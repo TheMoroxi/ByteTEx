@@ -69,3 +69,10 @@
     "file": "xbox-repair.md"
   }
 ]
+
+{
+  "title": "💻 Jak sprawdzić używany komputer przed zakupem",
+  "description": "Poradnik sprawdzania komputera przed zakupem: podzespoły, dysk, RAM, temperatury i wydajność.",
+  "category": "komputery",
+  "file": "sprawdzanie-uzywanego-komputera.md"
+}
