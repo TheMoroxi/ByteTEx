@@ -238,8 +238,7 @@
   "description": "Diagnostyka i rozwiązywanie najczęstszych problemów z drukarkami.",
   "category": "komputery",
   "file": "naprawa-drukarki.md"
-}
-,
+},
 {
   "title": "🧹 Czyszczenie laptopa",
   "description": "Usuwanie kurzu, wymiana pasty i poprawa chłodzenia laptopa.",
@@ -251,17 +250,6 @@
   "description": "Podstawowe sprawdzanie uszkodzeń płyty głównej komputera.",
   "category": "elektronika",
   "file": "diagnostyka-plyty-glownej.md"
-},
-{
-  "title": "🎮 Naprawa PlayStation PS4 PS5",
-  "description": "Diagnostyka i naprawa konsol PlayStation 4 oraz PlayStation 5.",
-  "category": "konsole",
-  "file": "naprawa-playstation.md"
-},
-{
-"title":"🛡️ Test zabezpieczeń przeglądarki",
-"description":"Sprawdź funkcje bezpieczeństwa swojej przeglądarki.",
-"category":"narzędzia",
-"file":"browser-test.html"
 }
+
 ]
