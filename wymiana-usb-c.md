@@ -20,6 +20,6 @@ Wymiana USB-C wymaga:
 - doświadczenia,
 - odpowiednich narzędzi.
 
-<a href="advance-mode-repair-usb-c.htm">
+<a href="advance-mode-repair-usb-c.html">
 Advance Mode
 </a>
