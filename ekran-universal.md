@@ -163,6 +163,5 @@ Sprawdź:
 
 ---
 
-# Wskazówka TechArchive
-
+# Wskazówka ByteTEx
 Przed wymianą sprawdź dokładny model urządzenia oraz typ części. Ten sam wygląd telefonu może występować w kilku wersjach z różnymi ekranami i złączami.
