@@ -138,7 +138,8 @@ h1,h2 {
 
 
 
-.categories button {
+.categories button,
+.categories a {
 
     background:
     rgba(255,255,255,0.15);
@@ -155,17 +156,21 @@ h1,h2 {
 
     font-size:16px;
 
+    text-decoration:none;
+
+    display:inline-block;
+
 }
 
 
 
-.categories button:hover {
+.categories button:hover,
+.categories a:hover {
 
     background:
     rgba(255,255,255,0.3);
 
 }
-
 
 
 /* ==========================
