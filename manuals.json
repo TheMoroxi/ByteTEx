@@ -120,18 +120,18 @@
     "file": "naprawa-pada-xbox.md"
   },
   {
-    "title": "🧹 Czyszczenie laptopa",
-    "description": "Usuwanie kurzu, wymiana pasty i poprawa chłodzenia laptopa.",
-    "category": "komputery",
-    "file": "czyszczenie-laptopa.md"
-  },
-  {
-    "title": "⚡ Diagnostyka płyty głównej",
-    "description": "Podstawowe sprawdzanie uszkodzeń płyty głównej komputera.",
-    "category": "elektronika",
-    "file": "diagnostyka-plyty-glownej.md"
-  },
-  {
+  "title": "🧹 Czyszczenie laptopa",
+  "description": "Usuwanie kurzu, wymiana pasty i poprawa chłodzenia laptopa.",
+  "category": "komputery",
+  "file": "czyszczenie-laptopa.md"
+},
+{
+  "title": "⚡ Diagnostyka płyty głównej",
+  "description": "Podstawowe sprawdzanie uszkodzeń płyty głównej komputera.",
+  "category": "elektronika",
+  "file": "diagnostyka-plyty-glownej.md"
+},
+{
   "title": "🎮 Naprawa PlayStation PS4 PS5",
   "description": "Diagnostyka i naprawa konsol PlayStation 4 oraz PlayStation 5.",
   "category": "konsole",
@@ -239,5 +239,23 @@
   "category": "komputery",
   "file": "naprawa-drukarki.md"
 }
+,
+{
+  "title": "🧹 Czyszczenie laptopa",
+  "description": "Usuwanie kurzu, wymiana pasty i poprawa chłodzenia laptopa.",
+  "category": "komputery",
+  "file": "czyszczenie-laptopa.md"
+},
+{
+  "title": "⚡ Diagnostyka płyty głównej",
+  "description": "Podstawowe sprawdzanie uszkodzeń płyty głównej komputera.",
+  "category": "elektronika",
+  "file": "diagnostyka-plyty-glownej.md"
+},
+{
+  "title": "🎮 Naprawa PlayStation PS4 PS5",
+  "description": "Diagnostyka i naprawa konsol PlayStation 4 oraz PlayStation 5.",
+  "category": "konsole",
+  "file": "naprawa-playstation.md"
+}
 ]
-
