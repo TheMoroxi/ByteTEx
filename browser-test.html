@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TechArchive Browser Security Test</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    background:#111;
+    color:white;
+    padding:20px;
+}
+
+.box{
+    background:#222;
+    padding:15px;
+    margin:10px 0;
+    border-radius:10px;
+}
+
+.good{
+    color:#00ff88;
+}
+
+.bad{
+    color:#ff5555;
+}
+
+button{
+    padding:10px;
+    cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>🛡️ Browser Security Test</h1>
+
+<p>Test podstawowych zabezpieczeń przeglądarki.</p>
+
+
+<button onclick="runTests()">
+▶ Uruchom test
+</button>
+
+
+<div id="results"></div>
+
+
+
+<script>
+
+const results=document.getElementById("results");
+
+
+function add(name,value,status){
+
+results.innerHTML += `
+
+<div class="box">
+
+<h3>${name}</h3>
+
+<p class="${status}">
+${value}
+</p>
+
+</div>
+
+`;
+
+}
+
+
+
+function runTests(){
+
+results.innerHTML="";
+
+
+/* HTTPS */
+
+if(location.protocol==="https:"){
+
+add(
+"🔒 HTTPS",
+"Strona używa szyfrowanego połączenia.",
+"good"
+);
+
+}else{
+
+add(
+"🔒 HTTPS",
+"Brak HTTPS.",
+"bad"
+);
+
+}
+
+
+
+/* JavaScript */
+
+add(
+"⚙ JavaScript",
+"JavaScript jest aktywny.",
+"good"
+);
+
+
+
+
+/* Cookies */
+
+if(navigator.cookieEnabled){
+
+add(
+"🍪 Cookies",
+"Cookies są włączone.",
+"good"
+);
+
+}else{
+
+add(
+"🍪 Cookies",
+"Cookies wyłączone.",
+"bad"
+);
+
+}
+
+
+
+/* LocalStorage */
+
+try{
+
+localStorage.setItem(
+"test",
+"ok"
+);
+
+localStorage.removeItem(
+"test"
+);
+
+
+add(
+"💾 LocalStorage",
+"Dostępny.",
+"good"
+);
+
+
+}catch(e){
+
+add(
+"💾 LocalStorage",
+"Zablokowany.",
+"bad"
+);
+
+}
+
+
+
+
+/* WebGL */
+
+let canvas=document.createElement("canvas");
+
+let gl=canvas.getContext("webgl");
+
+
+if(gl){
+
+add(
+"🎮 WebGL",
+"Dostępny.",
+"good"
+);
+
+}else{
+
+add(
+"🎮 WebGL",
+"Wyłączony.",
+"bad"
+);
+
+}
+
+
+
+/* User Agent */
+
+add(
+"🌐 Przeglądarka",
+navigator.userAgent,
+"good"
+);
+
+
+
+/* Online */
+
+if(navigator.onLine){
+
+add(
+"📡 Internet",
+"Połączenie aktywne.",
+"good"
+);
+
+}else{
+
+add(
+"📡 Internet",
+"Brak połączenia.",
+"bad"
+);
+
+}
+
+
+
+/* Geolocation */
+
+if("geolocation" in navigator){
+
+add(
+"📍 Geolokalizacja",
+"Przeglądarka obsługuje geolokalizację (wymaga zgody).",
+"good"
+);
+
+}else{
+
+add(
+"📍 Geolokalizacja",
+"Brak obsługi.",
+"bad"
+);
+
+}
+
+
+
+/* Notifications */
+
+if("Notification" in window){
+
+add(
+"🔔 Powiadomienia",
+"Obsługiwane.",
+"good"
+);
+
+}else{
+
+add(
+"🔔 Powiadomienia",
+"Brak obsługi.",
+"bad"
+);
+
+}
+
+
+
+/* HTTPS Security Headers info */
+
+add(
+"🛡️ Nagłówki bezpieczeństwa",
+"Sprawdź CSP, HSTS i X-Frame-Options w narzędziach deweloperskich.",
+"good"
+);
+
+
+
+}
+
+
+</script>
+
+
+<footer>
+© 2026 TechArchive
+</footer>
+
+
+</body>
+</html>
